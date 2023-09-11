@@ -1,6 +1,3 @@
-from itertools import chain
-
-
 class FlatIterator:
 
     def __init__(self, list_of_list):
@@ -45,8 +42,6 @@ def test_1():
         ['d', 'e', 'f', 'h', False],
         [1, 2, None]
     ]
-
-    print(list(FlatIterator(list_of_lists_1)))
 
     for flat_iterator_item, check_item in zip(
             FlatIterator(list_of_lists_1),

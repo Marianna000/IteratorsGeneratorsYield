@@ -2,11 +2,9 @@ import types
 
 
 def flat_generator(list_of_lists):
-
     for val in list_of_lists:
         for item in val:
             yield item
-
 
 
 
@@ -26,6 +24,7 @@ def test_2():
     ):
 
         assert flat_iterator_item == check_item
+
 
     assert list(flat_generator(list_of_lists_1)) == ['a', 'b', 'c', 'd', 'e', 'f', 'h', False, 1, 2, None]
 
